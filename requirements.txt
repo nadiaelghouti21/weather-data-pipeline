@@ -1,0 +1,15 @@
+# Weather Data Pipeline - Dependencies
+# =====================================
+# Install all dependencies with: pip install -r requirements.txt
+
+# HTTP requests library for API calls
+requests>=2.28.0
+
+# Data manipulation and analysis
+pandas>=2.0.0
+
+# Parquet file format support (columnar storage)
+pyarrow>=14.0.0
+
+# Testing framework
+pytest>=7.0.0
