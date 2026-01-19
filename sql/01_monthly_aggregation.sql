@@ -18,7 +18,7 @@ SELECT
     -- Create date_month in YYYY-MM format
     Year || '-' || CASE 
         WHEN Month < 10 THEN '0' || Month 
-        ELSE CAST(Month AS TEXT) 
+        ELSE CAST(Month AS TEXT)  -- otherwise convert the month to text as it is 
     END AS date_month,
     -- Temperature aggregations
     ROUND(AVG("Temp (°C)"), 2) AS temperature_celsius_avg,
